@@ -12,6 +12,7 @@ npm install @prrandheer621/react-pageflip
 
 ```tsx
 import HTMLFlipBook from "@prrandheer621/react-pageflip";
+import "@prrandheer621/react-pageflip/dist/index.css"; // Required for core flip styles
 
 function MyBook() {
   return (
