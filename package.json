@@ -1,0 +1,28 @@
+{
+  "name": "@prrandheer621/react-pageflip",
+  "version": "1.0.0",
+  "description": "A modern, 3D page flip effect for React. Forked to support smooth mobile portrait peeling.",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/prrandheer621/react-pageflip.git"
+  },
+  "author": "Randheer Prakash",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "tsup": "^8.0.2",
+    "typescript": "^5.0.0"
+  }
+}
