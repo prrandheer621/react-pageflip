@@ -1,6 +1,6 @@
 {
   "name": "@prrandheer621/react-pageflip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A modern, 3D page flip effect for React. Forked to support smooth mobile portrait peeling.",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
