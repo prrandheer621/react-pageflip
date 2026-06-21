@@ -393,6 +393,16 @@ export class Flip {
     private getDirectionByPoint(touchPos: Point): FlipDirection {
         const rect = this.getBoundsRect();
 
+        // If we are on the front cover, any interaction should flip forward
+        if (this.app.getCurrentPageIndex() === 0) {
+            return FlipDirection.FORWARD;
+        }
+
+        // If we are on the back cover, any interaction should flip backward
+        if (this.app.getCurrentPageIndex() === this.app.getPageCount() - 1) {
+            return FlipDirection.BACK;
+        }
+
         if (this.render.getOrientation() === Orientation.PORTRAIT) {
             if (touchPos.x - rect.pageWidth <= rect.width / 5) {
                 return FlipDirection.BACK;
